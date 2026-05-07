@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nguyễn Ngọc Tình — CV</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -54,7 +56,7 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--ink);min-h
 }
 .hero-bg-text{
   position:absolute;right:-20px;top:50%;transform:translateY(-50%);
-  font-family:'DM Serif Display',serif;font-size:180px;font-style:italic;
+  font-family:'Cormorant Garamond',Georgia,serif;font-size:180px;font-style:italic;
   color:rgba(200,80,58,0.04);white-space:nowrap;pointer-events:none;
   letter-spacing:-0.05em;user-select:none;
 }
@@ -66,7 +68,7 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--ink);min-h
   margin-bottom:20px;opacity:0;animation:fadeUp 0.6s 0.1s ease forwards;
 }
 .hero-name{
-  font-family:'DM Serif Display',serif;font-size:clamp(42px,7vw,72px);
+  font-family:'Cormorant Garamond',Georgia,'Times New Roman',serif;font-weight:600;font-size:clamp(48px,8vw,80px);
   line-height:1;letter-spacing:-0.02em;color:var(--ink);
   opacity:0;animation:fadeUp 0.6s 0.2s ease forwards;
 }
@@ -106,7 +108,7 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--ink);min-h
   box-shadow:0 0 0 1px var(--border),0 12px 40px rgba(0,0,0,0.12);
   display:flex;align-items:center;justify-content:center;
   background:linear-gradient(135deg,#e8d5cf,#c8e0e8);
-  font-family:'DM Serif Display',serif;font-size:36px;color:var(--accent2);
+  font-family:'Cormorant Garamond',Georgia,serif;font-size:36px;color:var(--accent2);
   letter-spacing:-0.02em;font-style:italic;
   transition:transform 0.3s ease;cursor:default;
   object-fit:cover;object-position:center top;
@@ -133,7 +135,7 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--ink);min-h
 .stat-box:hover{transform:translateY(-4px) scale(1.02);box-shadow:0 12px 32px rgba(0,0,0,0.08)}
 .stat-box:hover::before{opacity:1}
 .stat-num{
-  font-family:'DM Serif Display',serif;font-size:28px;color:var(--accent);
+  font-family:'Cormorant Garamond',Georgia,serif;font-size:28px;color:var(--accent);
   font-style:italic;display:block;line-height:1;margin-bottom:4px;
 }
 .stat-label{font-size:11px;color:var(--muted);font-weight:300}
@@ -176,7 +178,7 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--ink);min-h
 .exp-card:hover .exp-card-accent{height:100%;top:0;bottom:0}
 
 .exp-title{
-  font-family:'DM Serif Display',serif;font-size:20px;color:var(--ink);
+  font-family:'Cormorant Garamond',Georgia,serif;font-size:20px;color:var(--ink);
   margin-bottom:4px;font-style:italic;
 }
 .exp-company{font-size:13px;color:var(--accent2);font-weight:600;letter-spacing:0.03em;margin-bottom:12px}
@@ -216,7 +218,7 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--ink);min-h
   transition:all 0.3s ease;
 }
 .edu-card:hover{transform:translateX(4px);border-color:rgba(45,90,110,0.3)}
-.edu-school{font-family:'DM Serif Display',serif;font-size:17px;color:var(--ink);font-style:italic;margin-bottom:4px}
+.edu-school{font-family:'Cormorant Garamond',Georgia,serif;font-size:17px;color:var(--ink);font-style:italic;margin-bottom:4px}
 .edu-degree{font-size:13px;color:var(--accent2);font-weight:500;margin-bottom:8px}
 .edu-meta{display:flex;gap:12px;align-items:center}
 .gpa-badge{
@@ -263,7 +265,7 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--ink);min-h
 }
 .goal-card::before{
   content:'"';position:absolute;right:16px;top:-10px;
-  font-family:'DM Serif Display',serif;font-size:120px;color:rgba(200,80,58,0.06);
+  font-family:'Cormorant Garamond',Georgia,serif;font-size:120px;color:rgba(200,80,58,0.06);
   line-height:1;pointer-events:none;
 }
 .goal-card:hover{border-color:rgba(200,80,58,0.2);box-shadow:0 8px 24px rgba(0,0,0,0.05)}
@@ -289,7 +291,7 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--ink);min-h
   pointer-events:none;
 }
 .footer-text{font-size:13px;color:rgba(255,255,255,0.5);font-weight:300}
-.footer-name{font-family:'DM Serif Display',serif;font-size:18px;color:#fff;font-style:italic}
+.footer-name{font-family:'Cormorant Garamond',Georgia,serif;font-size:18px;color:#fff;font-style:italic}
 .footer-goal{font-family:'DM Mono',monospace;font-size:11px;color:rgba(200,80,58,0.8);letter-spacing:0.05em}
 .footer-status{
   display:flex;align-items:center;gap:8px;font-size:12px;
@@ -530,6 +532,19 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--ink);min-h
           <span class="skill-pill">Git</span>
           <span class="skill-pill">Apache Tomcat</span>
         </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Architecture & Frameworks</div>
+          <span class="skill-pill">Model-View-Controller (MVC)</span>
+          <span class="skill-pill">ASP.NET</span>
+          <span class="skill-pill">C#</span>
+          <span class="skill-pill">E-invoicing</span>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Professional</div>
+          <span class="skill-pill">IT Audit</span>
+          <span class="skill-pill">Web Development</span>
+          <span class="skill-pill">Teamwork</span>
+        </div>
       </div>
 
       <!-- ACHIEVEMENTS -->
@@ -553,7 +568,7 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--ink);min-h
       <div class="section reveal">
         <div class="section-label">Career Goal</div>
         <div class="goal-card">
-          <div style="font-family:'DM Serif Display',serif;font-size:15px;font-style:italic;color:var(--ink);line-height:1.5;margin-bottom:10px">
+          <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:15px;font-style:italic;color:var(--ink);line-height:1.5;margin-bottom:10px">
             "<span id="typed-goal"></span><span class="cursor-blink"></span>"
           </div>
           <div style="font-size:12px;color:var(--muted);font-weight:300;line-height:1.6">Eager to work in a dynamic environment, grow through hands-on experience, and contribute meaningfully to team and product success.</div>
