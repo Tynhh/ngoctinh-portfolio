@@ -948,6 +948,8 @@ if(avatar)avatar.style.animation='float 4s ease-in-out infinite';
 
 /* ─── SKILL PILLS STAGGER ────────────────────────────────── */
 document.querySelectorAll('.skill-pill').forEach((el,i)=>el.style.transitionDelay=(i*0.03)+'s');
+  function calculateDuration(startMonth,startYear){const months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];const sIdx=months.indexOf(startMonth);const sDate=new Date(startYear,sIdx,1);const now=new Date();let years=now.getFullYear()-sDate.getFullYear();let monthsDiff=now.getMonth()-sDate.getMonth();if(monthsDiff<0){years--;monthsDiff+=12;}return `${years} year${years!==1?'s':''} ${monthsDiff} month${monthsDiff!==1?'s':''}`;}function updateDurationElements(){document.querySelectorAll('[id*="-duration"][data-start]').forEach(el=>{const [month,year]=el.dataset.start.split(' ');const dur=calculateDuration(month,parseInt(year));el.textContent=dur;});}updateDurationElements();setInterval(updateDurationElements,3600000);
+
 </script>
 </body>
 </html>
